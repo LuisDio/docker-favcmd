@@ -1,5 +1,5 @@
-docker run - start an instance container
-docker ps - list container (add -a to list all)
+docker run - start an instance container(add the image name)
+docker ps - list container running container (add -a to list all with no exception)
 docker stop - stop a container(add name or id to specify the container to be stopped)
 docker rm - delete the container(add name or id to specify the container to be removed)
 
@@ -10,5 +10,7 @@ docker pull - download the image without running it
 docker exec - execute a command in the running container(add name or id to specify the container and the cmd to execute)
 docker exec sally_cont cat /etc/host
 
-docker run -d container_name - run a container in detach mode/or bacground mode(usually for container with log)
+docker run -d container_name - run a container in detach mode/or background mode(usually for container with log)
 docker attach container_name - allow you to attach back to the container
+
+docker run -it container_name bash - persist the container base image and log you in
