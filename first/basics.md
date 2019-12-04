@@ -25,3 +25,5 @@ docker run -it container_name bash - persist the container base image and log yo
 docker run image:tags - run a container with a tags version( if not specified it will run latest)
 
 docker run -it container_name - run container while listening to standard input and attached to terminal(-i interactive mode, -t terminal mode) if any.
+
+note: if you want apply sudo to container add(-u root) to the command
