@@ -14,3 +14,7 @@ docker run -d container_name - run a container in detach mode/or background mode
 docker attach container_name - allow you to attach back to the container
 
 docker run -it container_name bash - persist the container base image and log you in
+
+docker run image:tags - run a container from a tags version( if not specified it will run latest)
+
+docker run -it container_name - run container while listening to standard input(-i interactive mode, -t terminal mode) if any.
