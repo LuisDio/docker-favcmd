@@ -1,0 +1,31 @@
+Docker Compose
+
+applicable to run only on single host
+
+write a docker-compose.yml file
+```
+services:
+    web:
+      image: user/web:1
+      ports:
+    database:
+      image: user/db:1
+      ports:
+    messaging:
+      image: user/messaging:1
+      ports:
+```
+
+```
+docker-compose up - start the list of container
+```
+
+```
+docker run --links - links container together
+```
+
+Example:
+```
+docker run -d --name=redis redis - this is the database required for communication
+docker run -d --name=vote -p 5000:80 --link redis:redis voting-app - this allow use of redis within the application
+```
