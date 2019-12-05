@@ -39,5 +39,8 @@ inspect Network
 ```
 docker inspect containe_name_or_id - then find network
 ```
+```
+docker inspect network_id - inspect the network setting
+```
 
 Container can reach other using their container name(or internal IP not ideal though) through the builtin DNS
