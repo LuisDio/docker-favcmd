@@ -4,6 +4,7 @@ applicable to run only on single host
 
 write a docker-compose.yml file
 ```
+version '3'
 services:
     redis:
       image: user/redis:1
@@ -12,14 +13,14 @@ services:
       ports:
         - 5000:80
       links:
-        redis
+        - redis
     db:
       image: user/db:1
       ports:
         - 5001:80
 
     messaging:
-      image: user/messaging:1
+      build: ./message - build image not already in registry
       ports:
         - 5002:80
 ```
