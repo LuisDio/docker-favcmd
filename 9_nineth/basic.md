@@ -15,7 +15,8 @@ We could create our own network for few container to be isolated like so
 ```
 docker network create \
   --driver bridge \
-  --subnet 182.18.0.0/16
+  --subnet 182.18.0.0/16 \
+  --gateway 182.18.0.1
   custom-isolated-network
 ```
 
