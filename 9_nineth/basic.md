@@ -1,6 +1,6 @@
 Docker Networking
 
-Default Network created at install are:
+Default Network created at install are:<br/>
 --- Bridge - private internal network created by docker on the host in range 172 <br/>
 --- None - no network setting attached( Not accessible at all) <br/>
 --- host
