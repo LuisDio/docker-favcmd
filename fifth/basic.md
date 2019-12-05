@@ -10,4 +10,6 @@ FROM ubuntu
 ENTRYPOINT["sleep"]
 
 CMD["5"]
+
 ```
+finale command run is sleep 5
