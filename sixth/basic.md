@@ -5,15 +5,23 @@ applicable to run only on single host
 write a docker-compose.yml file
 ```
 services:
-    web:
+    redis:
+      image: user/redis:1
+    vote:
       image: user/web:1
       ports:
-    database:
+        - 5000:80
+      links:
+        redis
+    db:
       image: user/db:1
       ports:
+        - 5001:80
+
     messaging:
       image: user/messaging:1
       ports:
+        - 5002:80
 ```
 
 ```
