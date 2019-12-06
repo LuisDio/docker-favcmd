@@ -1,4 +1,8 @@
-```docker run - start an instance container(add the image name)```
+```docker run - start an instance container(add the image name)
+```
+```
+docker run image_name = docker create image_name + docker start container_id - This create a container first with id returned then second cmd start the container with id
+```
 
 ```docker ps - list container running container (add -a to list all with no exception)```
 
