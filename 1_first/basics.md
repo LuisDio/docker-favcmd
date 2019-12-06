@@ -1,6 +1,9 @@
 ```docker run - start an instance container(add the image name)
 ```
 ```
+docker logs container_id - Show logs from the container running
+```
+```
 docker run image_name = docker create image_name + docker start -a container_id - This create a container first with id returned then second cmd start the container with id
 ```
 
