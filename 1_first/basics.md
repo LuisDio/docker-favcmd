@@ -1,7 +1,7 @@
 ```docker run - start an instance container(add the image name)
 ```
 ```
-docker run image_name = docker create image_name + docker start container_id - This create a container first with id returned then second cmd start the container with id
+docker run image_name = docker create image_name + docker start -a container_id - This create a container first with id returned then second cmd start the container with id
 ```
 
 ```docker ps - list container running container (add -a to list all with no exception)```
@@ -31,3 +31,5 @@ docker run image_name = docker create image_name + docker start container_id - T
 ```docker run -it container_name - run container while listening to standard input and attached to terminal(-i interactive mode, -t terminal mode) if any.```
 
 ```note: if you want apply sudo to container add(-u root) to the command```
+
+```docker system prune - Delete all stopped containers, all build cache, all networks not used```
